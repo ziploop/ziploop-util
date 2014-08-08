@@ -1,0 +1,26 @@
+{
+  "name": "ziploop-util",
+  "version": "0.1.0",
+  "description": "Utility functions created by the Ziploop engineering team",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ziploop/ziploop-util.git"
+  },
+  "keywords": [
+    "throttle",
+    "forEach"
+  ],
+  "author": "Ziploop, Inc.",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/ziploop/ziploop-util/issues"
+  },
+  "homepage": "https://github.com/ziploop/ziploop-util"
+}
