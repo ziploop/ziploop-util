@@ -10,16 +10,18 @@ module.exports = {
       }
     })(0);
   },
-  validParams: function(obj, keys) {
+  validParams: function(obj, keys, strictMode) {
+  	var strict = strictMode || false;
+  	var resultObj = strict ? {} : obj;
 	  var missing = [];
 	  keys.forEach(function(key){
 	    if (!obj.hasOwnProperty(key)) missing.push(key);
+	    if (strict) resultObj[key] = obj[key];
 	  });
 	  if (missing.length > 0) {
-	    console.log("MISSING ARGUMENTS:\n", missing);
 	    return false;
 	  } else {
-	    return true;
+	    return resultObj;
 	  }
 	}
 };
