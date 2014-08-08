@@ -5,11 +5,11 @@ ziploop-util
 
 ## throttleForEach
 
-*A throttled forEach function, allowing the user to specify how quickly to iterate over an array. It was created to help with API requests where a fixed number of items need to be called at a fixed rate to avoid exceeding limits, without the complexity of a pool of requests that grows and shrinks over time, or where thinking about limits in terms of workers is not helpful.
+*A throttled forEach function, allowing the user to specify how quickly to iterate over an array. It was created to help with API requests where a fixed number of items need to be called at a fixed rate to avoid exceeding limits, without the complexity of a pool of requests that grows and shrinks over time, or where thinking about limits in terms of workers is not helpful.*
 
 **Arguments**: throttleForEach(array, waitTime, iterator)
 
-*The array is passed to the function so it can work with array-like objects (like Mongo cursors) without extending the Array prototype. Wait times are given in milliseconds. The iterator is passed two arguments: an array item and its index.
+*The array is passed to the function so it can work with array-like objects (like Mongo cursors) without extending the Array prototype. Wait times are given in milliseconds. The iterator is passed two arguments: an array item and its index.*
 
 #### Example
 
@@ -22,11 +22,11 @@ throttleForEach(array, 1000, function(name, i){
 
 ## validParams
 
-*Checks an object against an array of valid/allowed properties, with an optional 'strict mode' to eliminate unallowed properties from the object. It was created to check req.body or req.query in Node/Express for a route's required parameters.
+*Checks an object against an array of valid/allowed properties, with an optional 'strict mode' to eliminate unallowed properties from the object. It was created to check req.body or req.query in Node/Express for a route's required parameters.*
 
 **Arguments**: validParams(objectToCheck, arrayOfParameters, strictMode)
 
-*The arrayOfParameters should contain strings of allowed property names. The strictMode boolean specifies whether to return all properties (false) or only those matching properties in the arrayOfParameters list (true).
+*The arrayOfParameters should contain strings of allowed property names. The strictMode boolean specifies whether to return all properties (false) or only those matching properties in the arrayOfParameters list (true).*
 
 #### Example
 
