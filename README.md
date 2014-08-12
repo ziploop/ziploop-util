@@ -1,7 +1,7 @@
 ziploop-util
 ============
 
-*Utility functions created by the Ziploop engineering team*
+*Utility functions created by the [Ziploop engineering team](https://www.ziploop.com/careers)*
 
 ## throttleForEach
 
